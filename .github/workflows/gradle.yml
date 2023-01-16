@@ -46,5 +46,5 @@ jobs:
             sudo docker rm -f $(docker ps -qa)
             sudo docker pull ${{ secrets.DOCKER_REPO }}/web
             sudo docker pull ${{ secrets.DOCKER_REPO }}/nginx
-            docker-compose up -d
+            docker-compose -f /home/ubuntu/dc/docker-compose.yaml up -d
             docker image prune -f
