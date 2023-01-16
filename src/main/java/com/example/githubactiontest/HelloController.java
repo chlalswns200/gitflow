@@ -16,4 +16,9 @@ public class HelloController {
     public String bye() {
         return "action-test-bye";
     }
+
+    @GetMapping("bye2")
+    public String bye2() {
+        return "action-test-bye2";
+    }
 }
