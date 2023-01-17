@@ -14,7 +14,7 @@ public class HelloController {
     }
     @GetMapping("bye")
     public String bye() {
-        return "action-test-bye";
+        return "action-test-bye!";
     }
 
     @GetMapping("bye2")
