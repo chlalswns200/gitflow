@@ -5,9 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloControllerV2 {
-
     @GetMapping
     public String hellohello() {
-        return "hello world!";
+        return "hello world! - new commit";
     }
 }
