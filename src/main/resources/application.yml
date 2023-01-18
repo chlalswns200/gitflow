@@ -29,7 +29,7 @@ spring:
 
   redis:
     host:
-      localhost
+      ec2-3-35-209-71.ap-northeast-2.compute.amazonaws.com
     port:
       6379
 
