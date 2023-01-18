@@ -13,7 +13,7 @@ spring:
       matching-strategy: ant_path_matcher
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/museum-mate-db
+    url: jdbc:mysql://localhost:3306/museum-mate-local
     username: root
     password: 1234
 
@@ -23,9 +23,16 @@ spring:
     database : mysql
     hibernate.ddl-auto: update
 
-jwt:
-  token:
-    secret: hello
+  redis:
+    host:
+      localhost
+    port:
+      6379
+
+  jwt:
+    token:
+      secret: hello
+
 
 
 
